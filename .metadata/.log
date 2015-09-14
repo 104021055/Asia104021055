@@ -424,3 +424,33 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -pluginCustomization E:\N
 
 !ENTRY org.eclipse.ui 2 2 2015-09-11 15:04:56.250
 !MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-09-14 15:58:29.169 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Framework arguments:  -pluginCustomization E:\NVPACK\eclipse\nvpref.ini
+Command-line arguments:  -data E:\asia104021055\Asia104021055 -os win32 -ws win32 -arch x86 -pluginCustomization E:\NVPACK\eclipse\nvpref.ini
+
+!ENTRY org.eclipse.ui.ide 4 4 2015-09-14 16:01:13.227
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2015-09-14 16:01:13.230
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2015-09-14 16:01:13.230
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: E:\asia104021055\Asia104021055\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers (系統找不到指定的路徑。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:51)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1576)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1656)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1142)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.ui 2 2 2015-09-14 16:01:13.247
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
